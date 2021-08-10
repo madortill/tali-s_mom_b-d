@@ -371,7 +371,9 @@ function reaction(reactionKind) {
           start();
           scientistInAbout();
           $("#play-button").css({
-            "opacity": "0"
+            "top": "-30vw",
+            "width": "20%",
+            "left": "-50vw"
           });
           $("#notebook-button-ending").on("click", function() {
             $("#notebook-container").css("display", "flex");
