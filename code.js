@@ -356,9 +356,7 @@ function reaction(reactionKind) {
       if (ending === NUM_OF_LEADERS) {
         $("#notebook-button").off("click");
         $("#play-button").off("click");
-        $("#play-button").on("click", function() {
-          window.location.href = "https://youtube.com/shorts/w93f45UhEpg?feature=share";
-        });
+
 
 
         setTimeout(function() {
@@ -373,9 +371,7 @@ function reaction(reactionKind) {
           start();
           scientistInAbout();
           $("#play-button").css({
-            "top": "-30vw",
-            "width": "20%",
-            "left": "38vw"
+            "opacity": "0"
           });
           $("#notebook-button-ending").on("click", function() {
             $("#notebook-container").css("display", "flex");
@@ -384,7 +380,7 @@ function reaction(reactionKind) {
             }, 300);
             scientistOut();
           });
-          $("#speech-bubble").html(`עזרתם לי להכין את כל התרופות!<br><span id="great-job-span">עבודה מעולה!</span><br><br>בואו נמשיך הלאה`);
+          $("#speech-bubble").html(`עזרתם לי להכין את כל התרופות!<br><span id="great-job-span">עבודה מעולה!</span><br><br>מזל טוב אמא`);
 
         }, 1500);
       }
